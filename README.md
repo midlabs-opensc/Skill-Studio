@@ -27,7 +27,7 @@
 ## Download Skill Studio
 
 >Prebuilt Windows installers, the portable package, WebView2 requirements, and release guidance are available on
->the [Skill Studio website](https://midlabs-opensc.github.io/Skill-Studio-Web/). Visit the website for the recommended NSIS installer, MSI package, or
+>the [Skill Studio website](midlabskillstudio.netlify.app). Visit the website for the recommended NSIS installer, MSI package, or
 >portable ZIP instead of downloading individual build files from the source tree.
 
 ## Why Skill Studio?
