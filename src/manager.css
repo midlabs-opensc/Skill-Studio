@@ -1,0 +1,196 @@
+.manager-store {
+  max-width: 1400px;
+}
+.manager-tabs {
+  margin-bottom: 18px;
+}
+.manager-message {
+  padding: 11px 14px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface2);
+  color: var(--muted);
+  white-space: pre-line;
+}
+.manager-message .message-line {
+  display: block;
+  margin-top: 4px;
+}
+.dismissible-message {
+  position: relative;
+  padding-right: 45px;
+}
+.dismissible-message > .icon-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.catalog-search {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 8px 16px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.catalog-search input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  outline: 0;
+}
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.catalog-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--surface);
+}
+.catalog-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.catalog-installs {
+  font: 500 9px "DM Mono";
+  color: var(--muted);
+}
+.catalog-card h3 {
+  font-size: 16px;
+  margin: 15px 0 6px;
+  text-transform: capitalize;
+}
+.catalog-card > code {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--accent2);
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.catalog-card > p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.catalog-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+.catalog-card-actions .button {
+  flex: 1;
+}
+.catalog-detail-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 10px;
+}
+.catalog-detail > p {
+  margin: 14px 0;
+  line-height: 1.6;
+}
+.skill-readme {
+  max-height: 390px;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.install-options {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+.installed-list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 14px;
+}
+.installed-list > .panel {
+  padding: 18px;
+}
+.installed-list-head label {
+  width: 480px;
+}
+.installed-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface);
+}
+.installed-copy {
+  min-width: 0;
+}
+.installed-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.installed-card h3 {
+  margin: 0 0 5px;
+}
+.installed-card code,
+.installed-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.55;
+}
+.installed-card code {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.installed-card small {
+  margin-top: 8px;
+}
+.installed-state {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 7px;
+}
+.managed-note {
+  max-width: 150px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.35;
+  text-align: right;
+}
+.compact-detail .install-options {
+  margin-top: 20px;
+}
+@media (max-width: 1200px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

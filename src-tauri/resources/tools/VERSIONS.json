@@ -1,0 +1,10 @@
+{
+  "windows-x64": {
+    "node": "24.18.0",
+    "npm": "11.16.0",
+    "git-for-windows": "2.55.0.windows.3",
+    "github-cli": "2.96.0",
+    "skills-cli": "1.5.20",
+    "yaml": "2.8.3"
+  }
+}

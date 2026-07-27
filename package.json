@@ -1,0 +1,47 @@
+{
+  "name": "skill-studio",
+  "private": true,
+  "version": "0.1.0",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:standalone": "powershell -ExecutionPolicy Bypass -File scripts/build-windows-standalone.ps1",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "latest",
+    "@supabase/supabase-js": "2.52.1",
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-sql": "^2.0.0",
+    "@xyflow/react": "latest",
+    "lucide-react": "latest",
+    "monaco-editor": "0.56.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "7.18.1",
+    "recharts": "latest",
+    "zustand": "latest"
+  },
+  "overrides": {
+    "monaco-editor": {
+      "dompurify": "3.4.12"
+    }
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "prettier": "3.6.2",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "3.2.7"
+  }
+}
